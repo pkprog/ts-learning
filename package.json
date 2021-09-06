@@ -1,0 +1,12 @@
+{
+  "name": "ts-demo",
+  "version": "1.0.0",
+  "description": "проба программирования на Typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "pk",
+  "license": "ISC",
+  "dependencies": {}
+}
