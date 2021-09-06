@@ -1,13 +1,9 @@
-class User {
-    name: string;
-    constructor(_name:string) {
-        this.name = _name;
-    }
+console.log("Проверка функции:", processValues("q", 2));
+console.log("Проверка функции:", processValues("q"));
+console.log("Проверка функции:", processValues("q", 0));
+//console.log("Проверка функции:", processValues("q", null));
 
-}
+console.log("Проверка функции2:", sum(1, 2));
+//console.log("Проверка функции2:", sum2(1, 2));
+console.log("Проверка функции2:", sum3(100, 200, sum));
 
-const anna : User = new User("Anna");
-const header = this.document.getElementById("Header");
-if (header != null) {
-    header.innerHTML = "Привет, " + anna.name;
-}
