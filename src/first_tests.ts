@@ -23,3 +23,29 @@ let resultString1 : string = `Проба форматирования текст
 console.log(resultString1);
 
 
+let person: {name: string, age?: number} = {name: "Аня2", age: 18};
+console.log(`Тест объекта без класса: имя ${person.name} возраст ${person.age}`);
+
+person = {name: "Лиза"};
+const AGE_FIELD_NAME = "age";
+if (AGE_FIELD_NAME in person) {
+    console.log(`Тест объекта без класса: имя ${person.name} возраст ${person.age}`);
+} else {
+    console.log(`Тест объекта без класса: имя ${person.name} возраст НЕ указан`);
+}
+
+type Food = {name: string, weight: number, calories: number};
+type FoodGrass = Food & {height: number};
+
+function printFoodParameters({name, weight, calories}: Food): FoodGrass {
+    const div1 = <HTMLElement>document.getElementById("Header");
+    div1.innerHTML = `Название: ${name}, вес ${weight}, калорий ${calories}`;
+
+    const div2 = document.getElementById("Label") as HTMLElement;
+    div2.innerHTML = `Высота: 100`;
+
+    return {
+        name: name, weight: weight, calories: calories,
+        height: 100
+    }
+}

@@ -1,4 +1,4 @@
-function processValues(val1: string, val2: number = 1000): number {
+function processValues(val1: string, val2: number|null= 1000): number {
     let cnt = 0;
     if (val1 != null) {
         cnt++;
@@ -23,3 +23,4 @@ function sum3(x: number, y: number, op: (a: number, b: number) => number): numbe
     return op(x, y);
 }
 
+const sum4 = (x: number, y: number): number => x + y;
