@@ -49,3 +49,15 @@ function printFoodParameters({name, weight, calories}: Food): FoodGrass {
         height: 100
     }
 }
+
+function printTableParameters(name: string, weightUnit?: string, ...dimensions: number[]) {
+    console.log(`Стол: ${name}, единица веса ${weightUnit}, измерения ${dimensions}`);
+}
+
+function printMonitorParameters(name: string, diagonal: number) {
+    console.log(`Монитор: ${name}, диагональ ${diagonal}`);
+}
+
+function sumsum(num1: number, num2: number) {
+    console.log(`Сумма: ${num1} + ${num2}`);
+}
