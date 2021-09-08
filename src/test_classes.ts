@@ -57,6 +57,7 @@ abstract class Figure {
 }
 
 class Triangle extends Figure {
+    public static /*readonly*/ corners: number = 3;
     protected figureName: string;
 
     //Это только для target=es5, а у меня установлен параметр es3
@@ -78,10 +79,11 @@ class Triangle extends Figure {
 
     public toString() {
         super.toString();
-        console.log("Печать: Треугольник");
+        console.log("Печать: Треугольник. Маркировка:" + this._mark);
     }
 }
 
-const tr1: Triangle = new Triangle(3, "Треуг", "yes");
+Triangle.corners = 15;
+const tr1: Triangle = new Triangle(Triangle.corners, "Треуг", "yes");
 tr1.printArea()
 tr1.toString();
