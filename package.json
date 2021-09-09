@@ -8,5 +8,9 @@
   },
   "author": "pk",
   "license": "ISC",
-  "dependencies": {}
+  "dependencies": {
+    "es5-shim": "^4.6.2",
+    "promise-polyfill": "8.2.0",
+    "systemjs": "^6.10.3"
+  }
 }

@@ -20,4 +20,6 @@ printMonitorParameters(...mon1);
 const numsForSumSum = [21, 23] as const; //Без const не проходит. Но ошибк другая
 sumsum(...numsForSumSum);
 
+import hello from "./test_module";
+hello();
 

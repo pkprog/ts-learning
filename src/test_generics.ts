@@ -1,3 +1,5 @@
+///<reference path="test_interfaces.ts"/>
+
 function printName<T>(value: T, index: number): T {
     if (typeof value === "string") {
         console.log(`Generics test ${index}: ${<string>value}`);
