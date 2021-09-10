@@ -13,7 +13,16 @@
     <script src="pf_es3.js"></script>
     <script src="aight.js"></script>
     <script src="s_es3.js"></script>
-<!--    <script src="../src/lib/system.js"></script>-->
-    <script src="bundle.js"></script>
+    <script src="named-register_es3.js"></script>
+<!--    <script src="s.js"></script>-->
+<!--    <script src="named-register.js"></script>-->
+<!--    <script src="bundle.js"></script>-->
+    <script>
+        System.import("./bundle.js").then(function(res1) {
+            System.import('app').then(function(result) {
+                 console.log("Модули работают в IE9");
+            });
+        });
+    </script>
 </body>
 </html>

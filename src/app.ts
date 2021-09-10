@@ -1,3 +1,5 @@
+import {runFromModule} from "./module/test_main";
+
 console.log("Проверка функции:", processValues("q", 2));
 console.log("Проверка функции:", processValues("q"));
 console.log("Проверка функции:", processValues("q", 0));
@@ -23,3 +25,4 @@ sumsum(...numsForSumSum);
 import hello from "./test_module";
 hello();
 
+runFromModule();
