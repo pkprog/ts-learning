@@ -23,6 +23,7 @@ const numsForSumSum = [21, 23] as const; //Без const не проходит. �
 sumsum(...numsForSumSum);
 
 import hello from "./test_module";
+import HouseholdEquipment from "./module/test_m1";
 hello();
 
 runFromModule();
@@ -32,3 +33,8 @@ console.log(`Вывод сообщений, полученного через з
 console.log(`Вывод сообщений, полученного через заголовочный файл ОБЪЕКТ ${messageTree.toString()}`);
 const routerFromExternalClass = new Router(15, 0.12, "Zyxel");
 routerFromExternalClass.display();
+
+$("#testBtn").on("click", function() {
+    const he: HouseholdEquipment = new HouseholdEquipment(15, "Домашнее оборудование 1");
+    console.log(`Сообщение по нажатию кнопки по событие через JQuery: ${he.toString()}`);
+});
