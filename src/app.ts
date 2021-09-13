@@ -26,3 +26,9 @@ import hello from "./test_module";
 hello();
 
 runFromModule();
+
+console.log(`Вывод сообщений, полученного через заголовочный файл. ТЕКСТ ${TEST_EXT_MESSAGE}`);
+console.log(`Вывод сообщений, полученного через заголовочный файл ФУНКЦИЯ ${transformExtMessageText(1)}`);
+console.log(`Вывод сообщений, полученного через заголовочный файл ОБЪЕКТ ${messageTree.toString()}`);
+const routerFromExternalClass = new Router(15, 0.12, "Zyxel");
+routerFromExternalClass.display();

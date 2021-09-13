@@ -1,0 +1,1 @@
+declare const TEST_EXT_MESSAGE: string;
